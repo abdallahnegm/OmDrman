@@ -1,0 +1,73 @@
+/* start banner  */
+.banner {
+  background-image: url(../images/butcher/raw-meats-with-spices-utensils-rustic-cutting-board-dark-wood-top-view-ai-generative.png);
+  height: 35vh;
+}
+.banner .data {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  z-index: 20;
+  color: rgba(255, 255, 255, 0.8);
+}
+.banner .data h1 {
+  color: white;
+  font-weight: 500;
+}
+.banner::before {
+  height: 35vh;
+}
+/* end banner  */
+/* start about  */
+.back-cards {
+  padding-top: 50px;
+}
+/* end about  */
+/* start about-2  */
+.about-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  height: 30rem;
+  background-color: #1e1e1e;
+}
+@media (max-width: 1200px) {
+  .about-2 {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    height: 70rem;
+  }
+}
+.about-2 .sec {
+  background-color: #1e1e1e;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 20px;
+  justify-content: center;
+}
+.about-2 .sec h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.about-2 .sec p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2;
+}
+.about-2 img {
+  max-width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+}
+/* end about-2  */
+/* start footer  */
+footer {
+  background-color: black;
+}
+@media (max-width: 1200px) {
+  footer {
+    padding-top: 50px;
+  }
+}
+/* end footer  */

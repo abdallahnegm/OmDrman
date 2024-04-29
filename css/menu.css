@@ -1,0 +1,119 @@
+:root {
+  --main-color: #760a0b;
+  --main-tran: 0.3s;
+}
+/* start banner  */
+.banner {
+  background-image: url(../images/butcher/raw-meats-with-spices-utensils-rustic-cutting-board-dark-wood-top-view-ai-generative.png);
+  height: 35vh;
+}
+.banner .data {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  z-index: 20;
+  color: rgba(255, 255, 255, 0.8);
+}
+.banner .data h1 {
+  color: white;
+  font-weight: 500;
+}
+.banner::before {
+  height: 35vh;
+}
+/* end banner  */
+/* start menu  */
+.menu {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.menu span:first-child {
+  color: var(--main-color);
+}
+.menu h1 {
+  margin: 20px 0;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+.menu img {
+  max-width: 20%;
+}
+.switch {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.switch li {
+  background-color: #760a0b7a;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  transition: var(--main-tran);
+  -webkit-transition: var(--main-tran);
+  -moz-transition: var(--main-tran);
+  -ms-transition: var(--main-tran);
+  -o-transition: var(--main-tran);
+}
+.switch li.active {
+  background-color: var(--main-color);
+}
+.menu .food-item {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: var(--main-tran);
+  -webkit-transition: var(--main-tran);
+  -moz-transition: var(--main-tran);
+  -ms-transition: var(--main-tran);
+  -o-transition: var(--main-tran);
+}
+@media (max-width: 992px) {
+  .menu .food-item {
+    flex-direction: column;
+  }
+}
+
+.menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: space-evenly;
+}
+@media (max-width: 992px) {
+  .menu .menu-item {
+    /* justify-content: center; */
+    margin: 0 50px;
+  }
+}
+.menu p {
+  font-size: 22px;
+}
+@media (max-width: 992px) {
+  .menu p {
+    font-size: 18px;
+  }
+}
+.t2,
+.t3 {
+  display: none;
+}
+/* end menu  */
